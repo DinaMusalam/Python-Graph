@@ -83,26 +83,5 @@ class Meny:
 				os.system('cls' if os.name=='nt' else 'clear')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			if choice == 1: # SKRIV UT PERSONINFORMATION
-				#self.me.print_person()
-				personinformation = self.me.get_person_data()
-				for (k,v) in personinformation.iteritems():
-					functions.print2(k.title()+": "+v.encode('utf-8'), 'blue', False)
-
-
 m = Meny()
 m.start_meny()
